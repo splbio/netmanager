@@ -1,0 +1,42 @@
+{
+    "bridge_config": {
+        "control": {
+            "dynamic": false, 
+            "if": "bridge0"
+        }, 
+        "data": {
+            "dynamic": true
+        }
+    }, 
+    "topology": {
+        "control": {
+            "taps": {
+                "appliance_mgmt0": {
+                    "mode": "tap"
+                }, 
+                "client_control": {
+                    "mode": "tap"
+                }, 
+                "router_control": {
+                    "mode": "tap"
+                }
+            }
+        }, 
+        "data": {
+            "taps": {
+                "appliance_inject0": {
+                    "mode": "tap"
+                }, 
+                "appliance_span0": {
+                    "mode": "span"
+                }, 
+                "client_data": {
+                    "mode": "tap"
+                }, 
+                "router_data": {
+                    "mode": "tap"
+                }
+            }
+        }
+    }
+}
